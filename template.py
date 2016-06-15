@@ -18,4 +18,4 @@ if not os.path.isdir(args.outdir):
         pass
 
 # Logging
-logging.basicConfig(filename=os.path.join(args.outdir, 'logfile'), level=logging.getattr(logging, args.logLevel))
+logging.basicConfig(filename=os.path.join(args.outdir, 'logfile'), level=getattr(logging, args.logLevel))
